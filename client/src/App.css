@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  height: 100vw;
+  width: 100vw;
+  font-family: 'Arial', Helvetica, sans-serif;
+  /* background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+  background: #000428;
+    background: -webkit-linear-gradient( left,   #000428, #004e92 );
+    background: linear-gradient( left,  #000428, #004e92);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-shadow: 3px 13px 15px rgba(0, 0, 0, 0.12);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: #000428;
+    background: -webkit-linear-gradient(left, #004e92,  #000428);
+    background: linear-gradient(left, #004e92, #000428);
 }
 
-.card {
-  padding: 2em;
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.nav-brand {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-menu {
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50%;
+}
+
+.nav-menu a {
+  font-size: 1.5em;
+  color: #ffffffde;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+
+.nav-menu a:hover {
+  border-bottom: 2px solid #ffffffde;
+  transition: all 0.3ms ease;
 }

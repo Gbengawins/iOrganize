@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffffde;
   background-color: #242424;
 
   font-synthesis: none;
@@ -12,6 +12,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --font-brand: "Audiowide";
+  --font-brand-2: "Amita";
+
+  --Insignia-White: #f0e9ee;
+  --Scarlet: #FD0E35;
+  --Blue: #0066FF;
+  --Blue-sec: #4570E6;
+
+  --blue-gradient: rgba(#000099) to #0000FF;
+  --blue-gradient-sec: rgba(#0000FF) to #3366FF;
+  --blue-gradient: rgba(#0968e5) to (#091970);
+  --Schemes: #DEE9FC #6395F2 #1258DC #0A337F #091834;
+
+
+
+
+  --blue-pallette-primary: #00A6FB #0582CA #006494 #003554 #051923;
+  --blue-pallette-secondary: #03045E #023E8A #0077B6 #0096C7 #00B4D8 #48CAE4 #90E0EF #ADE8F4 #CAF0F8;
+  --blue-pallette-tertiary: #03256c #2541b2 #1768ac #06bee1 #ffffff;
 }
 
 a {
@@ -55,15 +75,46 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+--blue-pallette-primary {
+  color: red;
+  color: #FF2400;/*--Scarlet--*/
+  color: crimson;/*--Crimson--*/
+  color: #ffd700;/*--Gold--*/
+  color: #ffd800;/*--School bus yellow*/
+  color: #FFEF00;/*--Canary--*/
+  color: #03C03C; /*--Dark Pastel Green--*/
+  color: #4CBB17;/*--Kelly Green*/
+  color: green;/*--Green*/
+  color: #007FFF;/*--Azure*/
+  color: #2454FF; /*--Risd Blue*/
+  color: #0014A8;/*--Zaffre--*/
+  color: #002387;/*--Resolution blue*/
+  color: whitesmoke;/*--whitesmoke--*/
+  color: #F7F7F7;/*Sea salt*/
+  color: snow;/*--Snow--*/
+  color: #100C08;/*Smoky black*/
+  color: #010B13;/*-Rich black--*/
+  color: #242124;/*--Raising black--*/
+  color: #E5E4E2;/*--Platinum*/
+  color: #C0C0C0;/*--Silver--*/
+  color: gray;/*--Gray--*/
+}
+
+.background-gradient-1 {
+  background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.background-gradient-2 {
+  background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
